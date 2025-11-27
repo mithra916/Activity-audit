@@ -44,12 +44,10 @@ Step 3: Download or Export Logs
 ● Create table schema using CloudTrail log structure
 ● Sample query:
 Sql command:
-```
 SELECT userIdentity.userName, eventName, eventSource,
 sourceIPAddress, eventTime
 FROM cloudtrail_logs
 WHERE eventTime > current_date - interval '1' day;
-```
 ```
 ## Sample Output:
 Observations:
